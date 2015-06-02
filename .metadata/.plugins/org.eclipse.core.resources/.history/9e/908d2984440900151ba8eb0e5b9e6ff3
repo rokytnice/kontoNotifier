@@ -1,0 +1,32 @@
+package org.rochlitz.kontoNotifier;
+
+import java.util.concurrent.Callable;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
+
+import org.rochlitz.kontoNotfier.persistence.AllDAO;
+import org.rochlitz.kontoNotfier.persistence.NotifierDTO;
+
+public class NotfierCallableTask implements Callable<Boolean> {
+
+	private NotifierDTO not;
+
+	public NotfierCallableTask(NotifierDTO not) {
+		this.not = not;
+	}
+
+	@Override
+	public Boolean call()	throws	Exception	{
+//								logger.info("Sleeping...");
+//								Thread.sleep(5000);	
+//								logger.info("Finished	sleeping!");
+										
+								System.out.println("process task for Not id " + not.getId()  + "   filter - " + not.getFilter().getSearch() );
+//								logger.info("process task for Not id " + not.getId());
+								//TODO hbci execute
+								 //TODO JMS , email
+								return new Boolean(true); //sucess 
+								
+				}
+}

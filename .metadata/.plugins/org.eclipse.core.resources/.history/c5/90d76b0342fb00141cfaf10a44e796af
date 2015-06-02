@@ -1,0 +1,97 @@
+package org.rochlitz.hbci.persistence;
+
+import java.io.Serializable;
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "NOTIFIER")
+public class NotifierDTO implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name = "NOTIFIER_ID")
+	@GeneratedValue( strategy=GenerationType.IDENTITY )
+	private long notifierId;
+ 
+	@OneToOne
+	@JoinColumn(name = "FK_USER_ID")
+	private UserDTO user;
+	
+//	@OneToOne
+//	@Column(name = "FK_KONTO")
+//	@JoinColumn(name="KONTO_ID")
+//	private KontoDTO konto;
+	
+//	@OneToOne(fetch=FetchType.LAZY)
+//	@Column(name = "FK_FILTER")
+//	@JoinColumn(name="FILTER_ID")
+//	private FilterDTO filter;
+	
+	@Column(name = "LAST_EXEC")
+	private Date lastExecution;
+	
+	@Column(name = "ENABLED")
+	private boolean enable;// default = true later - disable
+
+	public long getNotifierId() {
+		return notifierId;
+	}
+
+	public void setNotifierId(long notifierId) {
+		this.notifierId = notifierId;
+	}
+
+//	public UserDTO getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(UserDTO user) {
+//		this.user = user;
+//	}
+
+//	public KontoDTO getKonto() {
+//		return konto;
+//	}
+//
+//	public void setKonto(KontoDTO konto) {
+//		this.konto = konto;
+//	}
+
+//	public FilterDTO getFilter() {
+//		return filter;
+//	}
+//
+//	public void setFilter(FilterDTO filter) {
+//		this.filter = filter;
+//	}
+
+	public Date getLastExecution() {
+		return lastExecution;
+	}
+
+	public void setLastExecution(Date lastExecution) {
+		this.lastExecution = lastExecution;
+	}
+
+	public boolean isEnable() {
+		return enable;
+	}
+
+	public void setEnable(boolean enable) {
+		this.enable = enable;
+	}
+
+}

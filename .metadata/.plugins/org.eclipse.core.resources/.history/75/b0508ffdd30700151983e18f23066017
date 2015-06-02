@@ -1,0 +1,45 @@
+package org.rochlitz.bankNotifier;
+
+import java.util.List;
+
+import javax.ejb.Singleton;
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+
+import org.rochlitz.kontoNotfier.persistence.AllDAO;
+import org.rochlitz.kontoNotfier.persistence.NotifierDTO;
+
+/**
+ * @author aroc
+ *
+ * reads nots from db and put them to queue and waits until queue has mor space or time is for next sceduling
+ * 
+ */
+
+
+//@Singleton
+@Stateless
+public class NotifierControler {
+	
+	
+	@Inject
+	AllDAO dao;
+	
+	public void fillQueuWithNots(){
+		
+	try {
+			
+			List<NotifierDTO> nots = (List<NotifierDTO>) dao.getAll( new NotifierDTO() ) ;
+			
+					
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+
+}

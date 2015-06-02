@@ -17,75 +17,75 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0-rt.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0-rt.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_1.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_1.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0-rt.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0-rt.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fn.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fn.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/permittedTaglibs.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/permittedTaglibs.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/scriptfree.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/scriptfree.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0-rt.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0-rt.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0-rt.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0-rt.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0.tld" project="kontoNotfierEJB"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x.tld" project="java4hbci"/>
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x.tld" project="kontoNotfierEJB"/>
     </library>
    </libraries>
   </path>
-  <path value="/home/aroc/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/enterprise/concurrent/api/main/jboss-concurrency-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/javax/javaee-api/7.0/javaee-api-7.0.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/resource/api/main/jboss-connector-api_1.7_spec-1.0.0.Final.jar"/>
-  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/rmi/api/main/jboss-rmi-api_1.0_spec-1.0.4.Final.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/batch/api/main/jboss-batch-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/rmi/api/main/jboss-rmi-api_1.0_spec-1.0.4.Final.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/as/controller-client/main/wildfly-controller-client-8.2.0.Final.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.10.Final-jandex.jar"/>
@@ -122,6 +122,9 @@
   <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/dmr/main/jboss-dmr-1.2.0.Final.jar"/>
  </paths>
  <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <core validator-id="jboss.jsf.core"/>
   <el>
    <linked-el length="37" name="%0" offset="29404" path="%1"/>
    <linked-el length="45" name="%2" offset="11915" path="%1"/>
@@ -138,16 +141,16 @@
    <linked-el length="55" name="%12" offset="9734" path="%1"/>
    <linked-el length="31" name="%13" offset="27774" path="%1"/>
    <linked-el length="43" name="%14" offset="20310" path="%1"/>
-   <linked-el length="39" name="%15" offset="29492" path="%1"/>
    <linked-el length="37" name="%15" offset="17760" path="%1"/>
+   <linked-el length="39" name="%15" offset="29492" path="%1"/>
    <linked-el length="39" name="%16" offset="8093" path="%1"/>
    <linked-el length="37" name="%17" offset="29404" path="%1"/>
    <linked-el length="55" name="%18" offset="9734" path="%1"/>
    <linked-el length="35" name="%19" offset="27345" path="%1"/>
    <linked-el length="33" name="%20" offset="20205" path="%1"/>
-   <linked-el length="36" name="%21" offset="29289" path="%1"/>
+   <linked-el length="25" name="%21" offset="17570" path="%1"/>
    <linked-el length="33" name="%22" offset="20205" path="%1"/>
-   <linked-el length="25" name="%23" offset="17570" path="%1"/>
+   <linked-el length="36" name="%23" offset="29289" path="%1"/>
    <linked-el length="29" name="%24" offset="29013" path="%1"/>
    <linked-el length="29" name="%24" offset="28518" path="%1"/>
    <linked-el length="29" name="%24" offset="28641" path="%1"/>
@@ -161,13 +164,13 @@
    <linked-el length="115" name="%30" offset="7848" path="%1"/>
    <linked-el length="24" name="%31" offset="29574" path="%1"/>
    <linked-el length="39" name="%32" offset="29173" path="%1"/>
-   <linked-el length="36" name="%33" offset="29289" path="%1"/>
    <linked-el length="31" name="%33" offset="27774" path="%1"/>
-   <linked-el length="39" name="%33" offset="29173" path="%1"/>
+   <linked-el length="36" name="%33" offset="29289" path="%1"/>
    <linked-el length="35" name="%33" offset="27345" path="%1"/>
+   <linked-el length="39" name="%33" offset="29173" path="%1"/>
    <linked-el length="26" name="%33" offset="29712" path="%1"/>
-   <linked-el length="25" name="%33" offset="29642" path="%1"/>
    <linked-el length="55" name="%33" offset="9734" path="%1"/>
+   <linked-el length="25" name="%33" offset="29642" path="%1"/>
    <linked-el length="37" name="%33" offset="29404" path="%1"/>
    <linked-el length="24" name="%33" offset="29574" path="%1"/>
    <linked-el length="43" name="%34" offset="20310" path="%1"/>
@@ -187,8 +190,8 @@
    <linked-el length="55" name="%47" offset="9734" path="%1"/>
    <linked-el length="55" name="%48" offset="9734" path="%1"/>
    <linked-el length="43" name="%49" offset="17658" path="%1"/>
-   <linked-el length="32" name="%50" offset="18155" path="%1"/>
-   <linked-el length="24" name="%51" offset="7723" path="%1"/>
+   <linked-el length="24" name="%50" offset="7723" path="%1"/>
+   <linked-el length="32" name="%51" offset="18155" path="%1"/>
    <linked-el length="115" name="%52" offset="7848" path="%1"/>
    <linked-el length="19" name="%53" offset="6585" path="%1"/>
    <linked-el length="115" name="%54" offset="7848" path="%1"/>
@@ -203,14 +206,14 @@
    <linked-el length="29" name="%54" offset="29013" path="%1"/>
    <linked-el length="32" name="%54" offset="18155" path="%1"/>
    <linked-el length="39" name="%54" offset="29492" path="%1"/>
-   <linked-el length="34" name="%54" offset="6925" path="%1"/>
-   <linked-el length="39" name="%54" offset="8093" path="%1"/>
    <linked-el length="43" name="%54" offset="17658" path="%1"/>
+   <linked-el length="39" name="%54" offset="8093" path="%1"/>
+   <linked-el length="34" name="%54" offset="6925" path="%1"/>
    <linked-el length="29" name="%54" offset="28641" path="%1"/>
-   <linked-el length="45" name="%55" offset="11915" path="%1"/>
-   <linked-el length="39" name="%56" offset="8177" path="%1"/>
-   <linked-el length="25" name="%57" offset="29642" path="%1"/>
-   <linked-el length="100" name="%58" offset="6700" path="%1"/>
+   <linked-el length="39" name="%55" offset="8177" path="%1"/>
+   <linked-el length="45" name="%56" offset="11915" path="%1"/>
+   <linked-el length="100" name="%57" offset="6700" path="%1"/>
+   <linked-el length="25" name="%58" offset="29642" path="%1"/>
    <linked-el length="25" name="%59" offset="29642" path="%1"/>
    <linked-el length="39" name="%60" offset="29173" path="%1"/>
    <linked-el length="31" name="%61" offset="27774" path="%1"/>
@@ -239,9 +242,9 @@
   <alias path="jboss.deployment" value="%18"/>
   <alias path="jboss.home" value="%19"/>
   <alias path="messaging.thread.pool.max" value="%20"/>
-  <alias path="env.OPENSHIFT_GEAR_DNS" value="%23"/>
+  <alias path="jboss.management.http" value="%23"/>
   <alias path="messaging.thread" value="%22"/>
-  <alias path="jboss.management.http" value="%21"/>
+  <alias path="env.OPENSHIFT_GEAR_DNS" value="%21"/>
   <alias path="env.OPENSHIFT_WILDFLY_IP" value="%24"/>
   <alias path="env.OPENSHIFT_APP_NAME" value="%25"/>
   <alias path="jboss.https" value="%26"/>
@@ -268,15 +271,15 @@
   <alias path="jboss.deployment.scanner" value="%47"/>
   <alias path="jboss.deployment.scanner.rollback.on" value="%48"/>
   <alias path="env.OPENSHIFT_WILDFLY_CLUSTER_PROXY_PORT" value="%49"/>
-  <alias path="postgresql.enabled" value="%51"/>
-  <alias path="env.OPENSHIFT_WILDFLY_CLUSTER" value="%50"/>
+  <alias path="env.OPENSHIFT_WILDFLY_CLUSTER" value="%51"/>
+  <alias path="postgresql.enabled" value="%50"/>
   <alias path="env.OPENSHIFT_POSTGRESQL_DB_HOST" value="%52"/>
   <alias path="mysql.enabled" value="%53"/>
   <alias path="env" value="%54"/>
-  <alias path="env.OPENSHIFT_POSTGRESQL_DB_PASSWORD" value="%56"/>
-  <alias path="adapter" value="%55"/>
-  <alias path="env.OPENSHIFT_MYSQL_DB_PORT" value="%58"/>
-  <alias path="jboss.http" value="%57"/>
+  <alias path="adapter" value="%56"/>
+  <alias path="env.OPENSHIFT_POSTGRESQL_DB_PASSWORD" value="%55"/>
+  <alias path="jboss.http" value="%58"/>
+  <alias path="env.OPENSHIFT_MYSQL_DB_PORT" value="%57"/>
   <alias path="jboss.http.port" value="%59"/>
   <alias path="jboss.socket.binding.port" value="%60"/>
   <alias path="jboss.bind" value="%61"/>

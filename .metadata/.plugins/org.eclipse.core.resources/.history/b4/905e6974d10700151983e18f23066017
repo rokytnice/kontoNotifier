@@ -1,0 +1,12 @@
+package org.rochlitz.bankNotifier;
+
+import javax.ejb.Singleton;
+import javax.inject.Inject;
+
+@Singleton
+public class NotifiERTimerService {
+
+	@Inject
+	NotifierControler notCon;
+	
+}

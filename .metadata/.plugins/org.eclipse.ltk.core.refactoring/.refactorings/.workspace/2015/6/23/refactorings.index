@@ -1,0 +1,9 @@
+1433151120521	Delete 4 resources
+1433151152096	Delete resource 'kontoNotifierLib'
+1433182817029	Delete resource 'kontoNotifierLibEAR'
+1433183504076	Delete resource 'kontoNotfierEJBEAR'
+1433183529453	Delete resource 'kontoNotfierEJBClient'
+1433233352847	Delete resource 'GenericTypeProvider'
+1433262346018	Rename Java project 'kontoNotifier'
+1433262875433	Delete resource 'bankNotifierWeb'
+1433268872817	Delete resource 'kontoNotifierProcessorThreaded'

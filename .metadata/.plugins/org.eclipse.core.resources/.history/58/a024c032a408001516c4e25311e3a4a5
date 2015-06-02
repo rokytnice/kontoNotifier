@@ -1,0 +1,20 @@
+package	com.packtpub.wflydevelopment.chapter12.batching;
+import javax.batch.api.chunk.ItemProcessor;
+import javax.inject.Inject;
+import javax.inject.Named;
+@Named
+public	class	SeatProcessor	implements	ItemProcessor	{
+				@Inject
+				private	SeatDao	dao;
+				@Override
+				public	Object	processItem(Object	id)	throws	Exception	{
+								Seat	seat	=	dao.find(Long.parseLong((String)	id));
+								if	(seat	!=	null)	{
+												if	(seat.getBooked()	==	true)	{
+																return	null;
+												}
+												seat.setBooked(true);
+								}
+								return	seat;
+				}
+}

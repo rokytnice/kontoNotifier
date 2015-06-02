@@ -1,0 +1,130 @@
+package org.rochlitz.hbci.persistence;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="FILTER")
+public class FilterDTO implements Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	//PK
+	@Id
+	@GeneratedValue
+	@Column(name = "FILTER_ID")
+	private int filterId;
+	
+	//substring search
+	@Column(name = "SEARCH")
+	private String search;  
+	
+	//search euro  min value
+	@Column(name = "MIN")
+	private int minValue;
+	
+	//search euro  max value
+	@Column(name = "MAX")
+	private int maxValue;
+	
+	//used to connect to records
+	@Column(name = "OR")
+	private boolean operatorOR;
+	
+	//used to connect to records
+	@Column(name = "AND")
+	private boolean operatorAND;
+	
+	//true if email notify
+	@Column(name = "SEARCH")
+	private boolean notifyTypeEMail; 
+	
+	//true if smartphone push notify
+	@Column(name = "PUSH")
+	private boolean notifyTypePush; 
+	
+	//true search string ins buchungsfield
+	@Column(name = "SEARCH_BUCHUNGTXT")
+	private boolean searchInBuchungsText; 
+	
+	//search string in auftraggeber field
+	@Column(name = "SEARCH_AUFTRAGG")
+	private boolean searchInBuchungAuftraggeber; 
+	
+	public int getFilterId() {
+		return filterId;
+	}
+	public void setFilterId(int filterId) {
+		this.filterId = filterId;
+	}
+	public String getBuchungsText() {
+		return search;
+	}
+	public void setBuchungsText(String buchungsText) {
+		this.search = buchungsText;
+	}
+	public int getMinValue() {
+		return minValue;
+	}
+	public void setMinValue(int minValue) {
+		this.minValue = minValue;
+	}
+	public int getMaxValue() {
+		return maxValue;
+	}
+	public void setMaxValue(int maxValue) {
+		this.maxValue = maxValue;
+	}
+	public boolean isOperatorOR() {
+		return operatorOR;
+	}
+	public void setOperatorOR(boolean operatorOR) {
+		this.operatorOR = operatorOR;
+	}
+	public boolean isOperatorAND() {
+		return operatorAND;
+	}
+	public void setOperatorAND(boolean operatorAND) {
+		this.operatorAND = operatorAND;
+	}
+	public String getSearch() {
+		return search;
+	}
+	public void setSearch(String search) {
+		this.search = search;
+	}
+	public boolean isNotifyTypeEMail() {
+		return notifyTypeEMail;
+	}
+	public void setNotifyTypeEMail(boolean notifyTypeEMail) {
+		this.notifyTypeEMail = notifyTypeEMail;
+	}
+	public boolean isNotifyTypePush() {
+		return notifyTypePush;
+	}
+	public void setNotifyTypePush(boolean notifyTypePush) {
+		this.notifyTypePush = notifyTypePush;
+	}
+	public boolean isSearchInBuchungsText() {
+		return searchInBuchungsText;
+	}
+	public void setSearchInBuchungsText(boolean searchInBuchungsText) {
+		this.searchInBuchungsText = searchInBuchungsText;
+	}
+	public boolean isSearchInBuchungAuftraggeber() {
+		return searchInBuchungAuftraggeber;
+	}
+	public void setSearchInBuchungAuftraggeber(boolean searchInBuchungAuftraggeber) {
+		this.searchInBuchungAuftraggeber = searchInBuchungAuftraggeber;
+	}
+	
+
+}

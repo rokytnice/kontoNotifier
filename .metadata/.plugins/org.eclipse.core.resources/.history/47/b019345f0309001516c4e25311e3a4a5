@@ -1,0 +1,93 @@
+package org.rochlitz.kontoNotifier;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
+import javax.ejb.Schedule;
+import javax.ejb.Singleton;
+import javax.ejb.Startup;
+import javax.enterprise.concurrent.ManagedExecutorService;
+import javax.enterprise.inject.Instance;
+import javax.inject.Inject;
+
+import org.rochlitz.kontoNotfier.persistence.AllDAO;
+import org.rochlitz.kontoNotfier.persistence.NotifierDTO;
+
+/**
+ * @author aroc
+ *
+ *         reads nots from db and put them to queue and waits until queue has
+ *         mor space or time is for next sceduling
+ * @param <NotfierCallableTask>
+ * 
+ */
+
+@Singleton
+@Startup
+public class NotifierProcessor {
+
+	private final Queue<Long> seats = new ConcurrentLinkedQueue<>();
+
+	@Resource
+	private ManagedExecutorService executorService;
+
+	// @Inject
+	// private Logger logger;
+
+	@Inject
+	private AllDAO dao;
+	
+	@Inject
+	private Instance<NotfierCallableTask> databaseCollector;
+
+	// @Schedule(second="*/10", minute="*",hour="*", persistent=false)
+	@PostConstruct
+	public void processing() {
+		try {
+
+			List<Long> notIds = dao.getAllIDs(new NotifierDTO());
+			List<NotfierCallableTask> notTasks = new ArrayList<NotfierCallableTask>();
+
+			Iterator<Long> iter = notIds.iterator();
+
+			while (iter.hasNext()) {
+				notTasks.add(new NotfierCallableTask(iter.next()));
+			}
+
+			Future<Boolean> futureResult = executorService.invokeAll( Collection<Callable<Boolean>> notTasks);
+
+			while (!futureResult.isDone()) {
+				// Wait
+				try {
+					Thread.sleep(100);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+
+		} catch (Exception e) {
+			// logger.log(Level.SEVERE, e.getMessage(), e);
+			e.printStackTrace();
+		}
+	}
+
+	private List<Integer> get(Future<List<Integer>> future) {
+		try {
+			return future.get();
+		} catch (InterruptedException | ExecutionException e) {
+			// logger.log(Level.SEVERE, e.getMessage(), e);
+			return new ArrayList<>();
+		}
+	}
+
+}

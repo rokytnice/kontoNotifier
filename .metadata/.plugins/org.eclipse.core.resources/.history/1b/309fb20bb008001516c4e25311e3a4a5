@@ -1,0 +1,40 @@
+package com.packtpub.wflydevelopment.chapter12.external;
+
+import java.util.List;
+import java.util.concurrent.Callable;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
+
+import org.rochlitz.kontoNotfier.persistence.AllDAO;
+import org.rochlitz.kontoNotfier.persistence.NotifierDTO;
+
+public class NotfierCallableTask implements Callable {
+
+	long id;
+
+	@Inject
+	private AllDAO dao;
+
+	@Inject
+	private Logger logger;
+
+	public NotfierCallableTask(long id) {
+		this.id = id;
+	}
+
+	@Override
+	public Object call()	throws	Exception	{
+								logger.info("Sleeping...");
+//								Thread.sleep(5000);	
+								logger.info("Finished	sleeping!");
+										
+								NotifierDTO not = (NotifierDTO) dao.find(id, new NotifierDTO());
+								
+								logger.info("process task for Not id " + not.getId());
+								//TODO hbci execute
+								 //TODO JMS , email
+								
+								
+				}
+}

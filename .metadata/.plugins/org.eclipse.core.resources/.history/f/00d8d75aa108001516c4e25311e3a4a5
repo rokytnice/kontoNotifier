@@ -1,0 +1,5 @@
+package org.rochlitz.kontoNotifier;
+
+public class SeatProcessor {
+
+}

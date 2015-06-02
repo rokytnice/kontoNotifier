@@ -1,0 +1,53 @@
+package org.rochlitz.kontoNotifier;
+
+import java.util.List;
+import java.util.concurrent.BlockingQueue;
+
+import javax.ejb.Singleton;
+import javax.inject.Inject;
+
+import org.rochlitz.kontoNotfier.persistence.AllDAO;
+import org.rochlitz.kontoNotfier.persistence.NotifierDTO;
+
+/**
+ * @author aroc
+ *
+ *         reads nots from db and put them to queue and waits until queue has
+ *         mor space or time is for next sceduling
+ * 
+ */
+
+@Singleton
+public class NotifierControler {
+
+	private BlockingQueue<NotifierDTO> notsQ;
+
+	@Inject
+	AllDAO dao;
+	
+	@Inject
+	NotifierProcessor nProc;
+
+	boolean fillQ = true;
+
+	public void fillQueuWithNots() {
+
+		try {
+
+			List<NotifierDTO> nots = (List<NotifierDTO>) dao
+					.getAll(new NotifierDTO());
+			try {
+				while (fillQ) {
+					notsQ.put(nots.iterator().next());
+				}
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

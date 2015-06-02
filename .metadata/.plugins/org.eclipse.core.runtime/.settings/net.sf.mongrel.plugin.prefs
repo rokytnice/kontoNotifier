@@ -1,0 +1,6 @@
+contextsDir=/etc/tomcat7/Catalina/localhost
+eclipse.preferences.version=1
+fixTomcatHomeBug=fixed
+tomcatConfigFile=/etc/tomcat7/conf/server.xml
+tomcatDir=/etc/tomcat7
+tomcatVersion=tomcatV7

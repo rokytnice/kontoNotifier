@@ -1,0 +1,17 @@
+package org.rochlitz.hbci.persistence;
+
+import javax.persistence.Entity;
+
+@Entity
+public class KontoDTO {
+
+	@id
+	private int id;
+	private int blz;
+	private int ktonr;
+	private String bic;
+	private String iban;
+	private String account; //zugansgnummer
+	private String password;
+	
+}

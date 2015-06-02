@@ -1,0 +1,40 @@
+1421059721774	Delete element
+1421059727025	Delete element
+1421060333796	Delete element
+1421060828239	Rename resource 'status.xml'
+1421062144041	Move file
+1421064860675	Delete element
+1421065163464	Delete elements
+1421065168462	Delete element
+1421065699053	Rename type 'FragmentDialogDemo'
+1421065868259	Rename resource 'trash'
+1421065875621	Move compilation unit
+1421069074132	Extract method 'openDialog'
+1421081898642	Move file
+1421090274337	Move compilation unit
+1421092687748	Delete elements
+1421227481019	Rename field 'ar'
+1421227539453	Rename field 't'
+1421311232546	Extract Class...
+1421312882889	Rename method 'triggerPublishProgress'
+1421313132413	Rename field 'waitForUserInput'
+1421313164600	Rename field 'userInput'
+1421313858390	Extract method 'syncStatus'
+1421314562637	Infer generic type arguments
+1421317813049	Delete element
+1421320710386	Rename field 't'
+1421329846946	Extract local variable 'dialogOutput'
+1421329877053	Extract method 'getDialogData'
+1421330020971	Rename local variable 'st'
+1421337154240	Move compilation units
+1421337296155	Rename type 'TestKontoAuszug'
+1421337307177	Rename type 'TestUmsatzAbrufen'
+1421337596494	Rename method 'kontoAuszug'
+1421337650464	Rename type 'KauszTask'
+1421337906896	Extract method 'setProperties'
+1421337986232	Rename method 'run'
+1421338260196	Copy compilation unit
+1421338353630	Rename method 'getKontoauszuege'
+1421338947316	Move compilation unit
+1421339468656	Rename type 'KontoAuszug'
+1421341044237	Move compilation unit

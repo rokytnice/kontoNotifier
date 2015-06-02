@@ -1,0 +1,19 @@
+1430833513906	Delete elements
+1430842191494	Move packages
+1430916192289	Extract constant 'DAY_OFFSET'
+1430919200395	Rename field 'blzComdirect'
+1430919225685	Rename field 'hostComdirect'
+1430919236821	Rename field 'country'
+1430920675204	Extract method 'createKtoAuszugJob'
+1430921110733	Extract method 'iniProps'
+1430922741976	Rename type 'TestKontoAuszugThreaded'
+1430923159692	Rename package 'org.rochlitz.hbci.tests.web.old'
+1430923961707	Delete element
+1430924540680	Copy compilation unit
+1430924548006	Delete element
+1430924559202	Copy compilation unit
+1430925127687	Extract method 'initCallbackHandler'
+1430929457053	Copy compilation unit
+1430929785933	Delete element
+1431080525883	Move files
+1431080542206	Move file

@@ -1,0 +1,9 @@
+package org.rochlitz.bankNotifier;
+
+@Singleton
+public class NotificationTimerService {
+
+	@Inject
+	NotifierControler
+	
+}

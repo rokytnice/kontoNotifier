@@ -1,0 +1,38 @@
+1433149555261	Move compilation unit
+1433150375871	Move compilation unit
+1433150566041	Move compilation unit
+1433150580767	Move compilation units
+1433150592143	Move compilation units
+1433150596896	Move compilation unit
+1433150639824	Move compilation unit
+1433183711240	Rename package 'org.rochlitz.bankNotifier'
+1433183734325	Delete element
+1433186165204	Delete element
+1433192630607	Delete element
+1433193702402	Delete element
+1433193708234	Delete element
+1433193966323	Move compilation unit
+1433194433239	Move compilation unit
+1433197953931	Delete element
+1433197998329	Delete element
+1433198196879	Rename type 'GenerateSeatRequestsFromDatabase'
+1433198646963	Rename method 'setUp'
+1433198662339	Delete element
+1433198674757	Rename type 'NotifierControler'
+1433198981942	Delete elements
+1433198989506	Delete elements
+1433199009601	Copy file
+1433199104616	Delete element
+1433199280970	Move file
+1433199384282	Delete element
+1433199404453	Move compilation units
+1433199407925	Delete element
+1433200195800	Rename method 'startProcessing'
+1433200211596	Move compilation unit
+1433201358832	Extract local variable 'iter'
+1433233637993	Rename local variable 'notsTask'
+1433254098511	Rename local variable 'notIds'
+1433261489930	Move file
+1433262980848	Copy file
+1433266541910	Move compilation unit
+1433266622632	Rename type 'KontoService'

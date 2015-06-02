@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+/media/aroc/OS/workspace/grioNotifier/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+431881490.index
+4179215838.index
+3749528372.index
+1182509716.index
+3723821408.index
+3630856503.index
+3064339454.index
+3937307871.index

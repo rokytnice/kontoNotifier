@@ -1,0 +1,5 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\n<messages>\n<message>.</message>\n<message>persistenc</message>\n<message>war</message>\n<message>missing files</message>\n<message>list notifiers</message>\n<message>persistence,rest,js is working</message>\n<message>dev</message>\n<message>dto interface, notifier service</message>\n<message>test commit</message>\n<message>innit</message>\n</messages>
+eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300
+show_initial_config_dialog=false

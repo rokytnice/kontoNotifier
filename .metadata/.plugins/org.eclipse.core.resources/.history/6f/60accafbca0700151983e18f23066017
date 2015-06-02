@@ -1,0 +1,5 @@
+package org.rochlitz.bankNotifier;
+
+public class NotifierProcessor {
+
+}

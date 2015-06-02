@@ -1,0 +1,28 @@
+package	com.packtpub.wflydevelopment.chapter12.external;
+import	java.util.concurrent.Callable;
+import	javax.enterprise.concurrent.ManagedTask;
+import	javax.enterprise.concurrent.ManagedTaskListener;
+import	javax.enterprise.inject.Instance;
+public	class	GenerateSeatRequestFromArtificial	implements
+Callable<List<Integer>>,	ManagedTask	[1]	{
+				@Inject
+				private	Logger	logger;
+				@Inject
+				private	Instance<TaskListener>	taskListener;	[2]
+				@Override
+				public	ManagedTaskListener	getManagedTaskListener()	{
+								return	taskListener.get();	[3]
+				}
+				@Override	
+				public	Map<String,	String>	getExecutionProperties()	{
+								return	new	HashMap<>();	[4]
+				}
+				@Override
+				public	List<Integer>	call()	throws	Exception	{
+								logger.info(“Sleeping...”);
+								Thread.sleep(5000);	[5]
+								logger.info(“Finished	sleeping!”);
+www.it-ebooks.info								
+								return	Arrays.asList(4,	5,	6);
+				}
+}

@@ -1,0 +1,32 @@
+package org.rochlitz.bankNotifier;
+
+import java.util.GregorianCalendar;
+
+import javax.ejb.EJB;
+import javax.ejb.Schedule;
+import javax.ejb.Startup;
+import javax.ejb.Stateless;
+
+@Startup
+@Stateless
+public class NotifierTimerService {
+
+	
+	
+	@EJB
+	NotifierControler notCon;
+	
+	
+	private NotifierTimerService(){
+		
+		doWork();
+	}
+	
+	
+	@Schedule(second="*", minute="*/1",hour="*", persistent=false)
+    public void doWork(){
+        System.out.println(" Timer: run  " + new GregorianCalendar().toString()  );
+    }
+	
+	
+}

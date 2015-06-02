@@ -1,0 +1,33 @@
+1420539408513	Copy compilation unit
+1420539460801	Copy file
+1420540125913	Change method 'log'
+1420543095224	Extract method 'test'
+1420548834001	Copy file
+1420553476815	Move file
+1420554142216	Move file
+1420554153563	Move file
+1420554174098	Move file
+1420554814011	Move file
+1420554924101	Move file
+1420554954816	Move file
+1420566035342	Rename local variable 'fname'
+1420571623217	Rename local variable 'testfile'
+1420626926866	Move file
+1420627534939	Delete element
+1420628052372	Move file
+1420629247081	Move file
+1420629356592	Move file
+1420630877820	Move file
+1420715923789	Extract local variable 'externalStorageReadOnly'
+1420715939842	Extract local variable 'externalStorageWritable'
+1420717358425	Move compilation unit
+1420717368247	Delete element
+1420718652183	Extract local variable 'extPath'
+1420730021619	Rename type 'HBCICallbackConsole'
+1420730081270	Rename type 'HBCICallbackIOStreams'
+1420730506022	Delete element
+1420730579950	Rename package 'com.rochlitz.gironotifier'
+1420733718371	Extracts string 'null' into R.string.save
+1420734146790	Rename field 'textView1'
+1420736695314	Delete element
+1420815731772	Rename local variable 'applicationContext'

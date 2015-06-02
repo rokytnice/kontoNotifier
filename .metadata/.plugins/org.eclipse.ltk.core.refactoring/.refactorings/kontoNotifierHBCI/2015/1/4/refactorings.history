@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;fileanme&apos; from expression &apos;&quot;comdirect_passport_u9.dat&quot;&apos;&#x0D;&#x0A;- Original project: &apos;kontoNotifier&apos;&#x0D;&#x0A;- Variable name: &apos;fileanme&apos;&#x0D;&#x0A;- Destination method: &apos;org.rochlitz.hbci.tests.apps.TestUmsatzAbrufen.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;&quot;comdirect_passport_u9.dat&quot;&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;fileanme&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;org.rochlitz.hbci.tests.apps{TestUmsatzAbrufen.java" name="fileanme" replace="true" selection="856 27" stamp="1421846480261" version="1.0"/>
+</session>

@@ -1,0 +1,19 @@
+package org.rochlitz.hbci.persistence;
+
+import javax.persistence.Entity;
+
+@Entity
+public class FilterDTO {
+	
+	
+	private int id;
+	private String searchString; //substring search within kontoauszug
+	private int minValue;
+	private int maxValue;
+	private boolean operatorOR;//used to connect to records
+	private boolean operatorAND;//used to connect to records
+	private boolean notifiTypeEMail; //true if email notify
+	private boolean notifiTypePush; //true if smartphone push notify
+	
+
+}

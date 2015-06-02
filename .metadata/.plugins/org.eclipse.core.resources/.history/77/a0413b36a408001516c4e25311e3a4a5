@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<job id=”externalSystem” xmlns=“http://xmlns.jcp.org/xml/ns/javaee”
+	version=“1.0”>
+	<properties>
+		<property name=”logFile” value=“log.txt” />
+	</properties>
+	<step id=“processData”>
+		<chunk item-count=“2”>
+
+			<reader ref=”externalSystemReader” />
+			<processor ref=”seatProcessor” />
+			<writer ref=”seatWriter” />
+		</chunk>
+	</step>
+</job>

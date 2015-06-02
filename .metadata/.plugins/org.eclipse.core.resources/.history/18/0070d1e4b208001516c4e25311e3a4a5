@@ -1,0 +1,28 @@
+package org.rochlitz.kontoNotifier;
+
+import java.util.GregorianCalendar;
+
+import javax.ejb.EJB;
+import javax.ejb.Schedule;
+import javax.ejb.Startup;
+import javax.ejb.Stateless;
+
+@Startup
+@Stateless
+public class NotifierTimerService {
+
+	@EJB
+	NotifierProcessor notCon;
+
+	private NotifierTimerService() {
+
+		doWork();
+	}
+
+	@Schedule(second="*", minute="*/10",hour="*", persistent=false)
+    public void doWork(){
+        System.out.println(" Timer: run  " + new GregorianCalendar().toString()  );
+        notCon.startProcessing();
+    }
+
+}

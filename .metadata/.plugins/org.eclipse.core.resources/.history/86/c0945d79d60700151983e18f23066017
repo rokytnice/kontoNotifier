@@ -1,0 +1,96 @@
+package org.rochlitz.bankNotifier;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+public class NotifierProcessor {
+
+	// Parallel running Threads(Executor) on System
+	int corePoolSize = 2;
+
+	// Maximum Threads allowed in Pool
+	int maxPoolSize = 4;
+
+	// Keep alive time for waiting threads for jobs(Runnable)
+	long keepAliveTime = 10;
+
+	// This is the one who manages and start the work
+	ThreadPoolExecutor threadPool = null;
+
+	// Working queue for jobs (Runnable). We add them finally here
+	final ArrayBlockingQueue workQueue = new ArrayBlockingQueue(5);
+
+	public NotifierProcessor() {
+		Runtime runtime = Runtime.getRuntime();
+
+		corePoolSize = runtime.availableProcessors();
+
+		threadPool = new ThreadPoolExecutor(corePoolSize, maxPoolSize,
+				keepAliveTime, TimeUnit.SECONDS, workQueue);
+	}
+
+	/**
+	 * Here we add our jobs to working queue
+	 *
+	 * @param task
+	 *            a Runnable task
+	 */
+	public void runTask(Runnable task) {
+		threadPool.execute(task);
+		System.out.println("Tasks in workQueue.." + workQueue.size());
+	}
+
+	/**
+	 * Shutdown the Threadpool if it’s finished
+	 */
+	public void shutDown() {
+		threadPool.shutdown();
+	}
+
+	public static void main(String args[]) {
+		NotifierProcessor mtpe = new NotifierProcessor();
+
+		for (int i = 0; i < 6; i++) {
+			mtpe.runTask(new WorkerRunnable(i));
+		}
+
+		mtpe.shutDown();
+		System.out.println("Finished! :)");
+	}
+
+	/**
+	 * This is the one who do the work
+	 *
+	 * This one is static for accessing from main class
+	 */
+	private static class WorkerRunnable implements Runnable {
+
+		// so we can see which job is running
+		private int jobNr;
+
+		/**
+		 * This is for understanding only
+		 *
+		 * @param jobNr
+		 *            number for displaying
+		 */
+		public WorkerRunnable(int jobNr) {
+			this.jobNr = jobNr;
+		}
+
+		@Override
+		public void run() {
+			for (int i = 0; i < 10; i++) {
+
+				try {
+					System.out.println("Thread " + jobNr + " calculated " + i);
+					Thread.currentThread().sleep(1000);
+				} catch (InterruptedException ie) {
+					ie.printStackTrace();
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,78 @@
+package org.kapott.hbci.tests.apps;
+
+import java.util.Properties;
+
+import org.kapott.hbci.GV.HBCIJob;
+import org.kapott.hbci.callback.HBCICallbackConsole;
+import org.kapott.hbci.manager.HBCIHandler;
+import org.kapott.hbci.manager.HBCIUtils;
+import org.kapott.hbci.passport.AbstractHBCIPassport;
+import org.kapott.hbci.passport.HBCIPassport;
+import org.kapott.hbci.status.HBCIExecStatus;
+import org.kapott.hbci.structures.Konto;
+import org.kapott.hbci.structures.Value;
+
+public class TestUmsatzAbrufen
+{
+    public static void main(String[] args)
+    {
+        Properties props=new Properties();
+        
+        // zu verwendendes passport konfigurieren
+        props.setProperty("client.passport.default", "PinTan");
+        props.setProperty("client.passport.RDHNew.filename", "C:\\workspace\\grioNotifier\\kontoNotifier\\comdirect_passport.dat");
+        props.setProperty("client.passport.RDHNew.init", "1");
+
+        // loglevel und -filter auf maximales logging setzen
+        props.setProperty("log.loglevel.default", "5");
+        props.setProperty("log.filter", "0");
+        
+        HBCIUtils.init(props, new HBCICallbackConsole());
+        
+        // hbcihandler instanziieren
+        HBCIPassport passport=AbstractHBCIPassport.getInstance();
+        HBCIHandler  handler=new HBCIHandler("300", passport);
+        
+        // eigenes konto
+        Konto myAccount=passport.getAccounts()[0];
+        myAccount.number="4900585";
+        
+        // gegenkonto
+//        Konto targetAccount=new Konto("DE", "20041133", "4900585");
+//        targetAccount.name="Andre Rochlitz";
+//        targetAccount.bic="WELADE8L";
+//        targetAccount.iban="DE47860555921800214215";
+
+        
+        // sepa-ueberweisung erzeugen
+        HBCIJob job=handler.newJob("SaldoReq");
+        // daten fuer eigenes konto setzen
+        job.setParam("src", myAccount);
+        // daten fuer gegenkonto setzen
+//        job.setParam("dst", targetAccount);
+        // betrag + waehrung
+//        job.setParam("btg", new Value(2,"EUR"));
+        // verwendungszweck (nur EINE Zeile, dafuer aber mehr als 27 zeichen erlaubt)
+//        job.setParam("usage", "Test Verwendungszweck");
+        
+        /*
+        HBCIJob job=handler.newJob("SaldoReqSEPA");
+        job.setParam("my.bic", myAccount.bic);
+        job.setParam("my.iban", myAccount.iban);
+        */
+        
+        // job hinzufuegen
+        job.addToQueue();
+        
+        // ausfuehren
+        HBCIExecStatus status=handler.execute();
+        System.out.println("status:");
+        System.out.println(status);
+        
+        System.out.println("result:");
+        System.out.println(job.getJobResult());
+        
+        // aufraeumen
+        handler.close();
+    }
+}

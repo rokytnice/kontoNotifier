@@ -1,0 +1,16 @@
+package org.rochlitz.kontoNotifier;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+import javax.inject.Named;
+
+
+@Named
+public class NotifierProcessor implements	ItemProcessor	{
+	
+ @Inject
+ NotifierControler notC;
+
+}

@@ -1,0 +1,28 @@
+package org.rochlitz.hbci.persistence;
+
+import java.sql.Timestamp;
+
+import javax.persistence.Entity;
+
+@Entity
+public class NotifierDTO {
+	
+	private int id;
+	private UserDTO user;
+	private KontoDTO konto;
+	private FilterDTO filter;
+	private Timestamp lastExecution;
+	private boolean enable;//default = true later - disable
+	
+	
+}
+
+/* 
+ * gui
+ 
+notfier:
+	<string>stringsearch
+	<int>minimum 
+	<int>maximum
+	<select> bank 
+*/

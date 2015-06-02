@@ -1,0 +1,29 @@
+1431845606160	Rename type 'KontoDAO'
+1431845657011	Rename package 'org.rochlitz.hbci.persistence'
+1431845854174	Rename local variable 'kto'
+1431845894218	Copy compilation unit
+1431845940342	Rename local variable 'konto'
+1431845975737	Delete element
+1431845985459	Rename resource 'hbci.html'
+1431846129037	Copy file
+1431848664423	Delete element
+1431848722625	Delete element
+1431850743137	Move compilation unit
+1431850849012	Move file
+1431851509394	Delete element
+1431866840261	Delete element
+1431868215807	Move file
+1431873084217	Copy elements
+1431876813267	Copy folder
+1431889538985	Rename type variable 'T'
+1431889656397	Infer generic type arguments
+1431890157704	Infer generic type arguments
+1431980618515	Rename method 'get'
+1432035531918	Move compilation unit
+1432035760253	Infer generic type arguments
+1432036784325	Delete elements
+1432051563735	Rename function 'registerMember'
+1432051601881	Rename local variable 'memberData'
+1432051812526	Rename local variable 'memberData'
+1432052693235	Rename method 'addKonto'
+1432053474392	Rename local variable 'dto'
