@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="kontoNotfierEJB"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.1.4.GA.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-infinispan-4.0.21.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/activation/api/main/activation-1.1.1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.1.5.Final/arquillian-junit-container-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/security/jacc/api/main/jboss-jacc-api_1.5_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/junit/junit/4.11/junit-4.11.jar"/>
+  <path value="/home/aroc/.m2/repository/org/easytesting/fest-util/1.1.6/fest-util-1.1.6.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/el/api/main/jboss-el-api_3.0_spec-1.0.3.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-client-3.0.10.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/glassfish/javax/json/main/javax.json-1.0.3.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final-redhat-2/jboss-interceptors-api_1.1_spec-1.0.1.Final-redhat-2.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/protocol/arquillian-protocol-servlet/1.1.5.Final/arquillian-protocol-servlet-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/hibernate/hibernate-validator/4.3.2.Final-redhat-1/hibernate-validator-4.3.2.Final-redhat-1.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/mail/api/main/javax.mail-1.5.1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.1.5.Final/arquillian-container-test-spi-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/websocket/api/main/jboss-websocket-api_1.1_spec-1.1.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/xml/rpc/api/main/jboss-jaxrpc-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/servlet/jstl/api/main/jboss-jstl-api_1.2_spec-1.1.2.Final.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0-rt.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_0.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c-1_1.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/c.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0-rt.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt-1_0.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fmt.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/fn.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/permittedTaglibs.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/scriptfree.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0-rt.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql-1_0.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/sql.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0-rt.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x-1_0.tld" project="java4hbci"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.2.Final.jar/META-INF/x.tld" project="java4hbci"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.1.5.Final/arquillian-test-spi-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/enterprise/concurrent/api/main/jboss-concurrency-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/resource/api/main/jboss-connector-api_1.7_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/rmi/api/main/jboss-rmi-api_1.0_spec-1.0.4.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/batch/api/main/jboss-batch-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/as/controller-client/main/wildfly-controller-client-8.2.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.10.Final-jandex.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.2.2/shrinkwrap-api-1.2.2.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/xml/soap/api/main/jboss-saaj-api_1.3_spec-1.0.3.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/com/google/oauth-client/google-oauth-client/1.18.0-rc/google-oauth-client-1.18.0-rc.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.2.2/shrinkwrap-impl-base-1.2.2.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/xml/ws/api/main/jboss-jaxws-api_2.2_spec-2.0.2.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/javax/validation/validation-api/1.0.0.GA-redhat-2/validation-api-1.0.0.GA-redhat-2.jar"/>
+  <path value="/home/aroc/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-5/shrinkwrap-descriptors-api-base-2.0.0-alpha-5.jar"/>
+  <path value="/home/aroc/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-3.0.10.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.1.5.Final/arquillian-container-spi-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/wsdl4j/api/main/wsdl4j-1.6.3.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-3.0.10.Final-jandex.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final-redhat-2/jboss-annotations-api_1.1_spec-1.0.1.Final-redhat-2.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/ws/rs/api/main/jaxrs-api-3.0.10.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.1.5.Final/arquillian-config-impl-base-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.1.5.Final/arquillian-junit-core-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/servlet/jsp/api/main/jboss-jsp-api_2.3_spec-1.0.1.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/com/google/http-client/google-http-client/1.18.0-rc/google-http-client-1.18.0-rc.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.1.5.Final/arquillian-test-impl-base-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.2.2/shrinkwrap-spi-1.2.2.jar"/>
+  <path value="/home/aroc/.m2/repository/org/easytesting/fest-assert/1.4/fest-assert-1.4.jar"/>
+  <path value="/home/aroc/.m2/repository/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar"/>
+  <path value="/home/aroc/.m2/repository/javax/inject/javax.inject/1.redhat-4/javax.inject-1.redhat-4.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/validation/api/main/validation-api-1.1.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/inject/api/main/javax.inject-1.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/hibernate/validator/main/hibernate-validator-5.1.3.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-5/shrinkwrap-descriptors-spi-2.0.0-alpha-5.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.10.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.1.5.Final/arquillian-core-api-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/xml/bind/api/main/jboss-jaxb-api_2.2_spec-1.0.4.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/faces/api/main/jboss-jsf-api_2.2_spec-2.2.8.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.1.5.Final/arquillian-config-api-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/apache/httpcomponents/httpclient/4.0.1/httpclient-4.0.1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.1.5.Final/arquillian-container-test-api-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/interceptor/api/main/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/jms/api/main/jboss-jms-api_2.0_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-commons-1.0.0.final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.1.5.Final/arquillian-core-spi-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.1.5.Final/arquillian-container-test-impl-base-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_1.1_spec/1.0.1.Final-redhat-2/jboss-jaxrs-api_1.1_spec-1.0.1.Final-redhat-2.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final-redhat-2/hibernate-jpa-2.0-api-1.0.1.Final-redhat-2.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.2.Final-redhat-1/jboss-servlet-api_3.0_spec-1.0.2.Final-redhat-1.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/transaction/api/main/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-3.0.10.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/javax/enterprise/cdi-api/1.0-SP4-redhat-4/cdi-api-1.0-SP4-redhat-4.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/async-http-servlet-3.0-3.0.10.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.2.Final-redhat-2/jboss-ejb-api_3.1_spec-1.0.2.Final-redhat-2.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/logging/jboss-logging/3.1.4.GA-redhat-1/jboss-logging-3.1.4.GA-redhat-1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.1.5.Final/arquillian-container-impl-base-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.1.5.Final/arquillian-test-api-1.1.5.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/security/auth/message/api/main/jboss-jaspi-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.1.0.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-4.0.21.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/org/hibernate/hibernate-jpamodelgen/1.2.0.Final/hibernate-jpamodelgen-1.2.0.Final.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/javax/jws/api/main/jsr181-api-1.0-MR1.jar"/>
+  <path value="/home/aroc/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.1.5.Final/arquillian-core-impl-base-1.1.5.Final.jar"/>
+  <path value="/home/aroc/.m2/repository/com/google/api-client/google-api-client/1.18.0-rc/google-api-client-1.18.0-rc.jar"/>
+  <path value="/home/aroc/wildfly-8.2.0.Final/modules/system/layers/base/org/jboss/dmr/main/jboss-dmr-1.2.0.Final.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;%2;" path="%0"/>
+  </core>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="29" name="%3" offset="9501" path="%4"/>
+   <linked-el length="24" name="%5" offset="3383" path="%6"/>
+   <linked-el length="24" name="%5" offset="4268" path="%4"/>
+   <linked-el length="21" name="%7" offset="10504" path="%4"/>
+   <linked-el length="21" name="%7" offset="8909" path="%4"/>
+   <linked-el length="21" name="%8" offset="8753" path="%4"/>
+   <linked-el length="29" name="%9" offset="9501" path="%4"/>
+   <linked-el length="24" name="%10" offset="11404" path="%4"/>
+   <linked-el length="24" name="%11" offset="3383" path="%6"/>
+   <linked-el length="24" name="%11" offset="4268" path="%4"/>
+   <linked-el length="24" name="%11" offset="4576" path="%4"/>
+   <linked-el length="24" name="%12" offset="11404" path="%4"/>
+   <linked-el length="24" name="%12" offset="3383" path="%6"/>
+   <linked-el length="21" name="%12" offset="10504" path="%4"/>
+   <linked-el length="26" name="%12" offset="9670" path="%4"/>
+   <linked-el length="26" name="%12" offset="3026" path="%6"/>
+   <linked-el length="26" name="%12" offset="13245" path="%4"/>
+   <linked-el length="29" name="%12" offset="9501" path="%4"/>
+   <linked-el length="21" name="%12" offset="8909" path="%4"/>
+   <linked-el length="24" name="%12" offset="4268" path="%4"/>
+   <linked-el length="26" name="%12" offset="14186" path="%4"/>
+   <linked-el length="24" name="%12" offset="4576" path="%4"/>
+   <linked-el length="21" name="%13" offset="10504" path="%4"/>
+   <linked-el length="21" name="%13" offset="8909" path="%4"/>
+   <linked-el length="57" name="%14" offset="12081" path="%4"/>
+   <linked-el length="58" name="%14" offset="11950" path="%4"/>
+   <linked-el length="21" name="%14" offset="8753" path="%4"/>
+   <linked-el length="57" name="%15" offset="12081" path="%4"/>
+   <linked-el length="58" name="%15" offset="11950" path="%4"/>
+   <linked-el length="24" name="%16" offset="11404" path="%4"/>
+   <linked-el length="26" name="%17" offset="9670" path="%4"/>
+   <linked-el length="26" name="%17" offset="3026" path="%6"/>
+   <linked-el length="26" name="%17" offset="13245" path="%4"/>
+   <linked-el length="26" name="%17" offset="14186" path="%4"/>
+   <linked-el length="24" name="%18" offset="11404" path="%4"/>
+   <linked-el length="57" name="%19" offset="12081" path="%4"/>
+   <linked-el length="58" name="%19" offset="11950" path="%4"/>
+   <linked-el length="24" name="%20" offset="4576" path="%4"/>
+   <linked-el length="26" name="%21" offset="9670" path="%4"/>
+   <linked-el length="26" name="%21" offset="3026" path="%6"/>
+   <linked-el length="26" name="%21" offset="13245" path="%4"/>
+   <linked-el length="26" name="%21" offset="14186" path="%4"/>
+   <linked-el length="24" name="%22" offset="3383" path="%6"/>
+   <linked-el length="29" name="%22" offset="9501" path="%4"/>
+   <linked-el length="24" name="%22" offset="4268" path="%4"/>
+   <linked-el length="24" name="%22" offset="4576" path="%4"/>
+   <linked-el length="57" name="%23" offset="12081" path="%4"/>
+   <linked-el length="58" name="%23" offset="11950" path="%4"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="version.jboss.maven" value="%3"/>
+  <alias path="version.jboss.bom.wfk" value="%5"/>
+  <alias path="/kontoNotifier-web/pom.xml" value="%4"/>
+  <alias
+   path="/kontoNotifier-web/src/main/java/org/rochlitz/kontoNotifier/rest/NotifierService.java" value="%2"/>
+  <alias path="version.war.plugin" value="%7"/>
+  <alias path="project.artifactId" value="%8"/>
+  <alias path="version.jboss.maven.plugin" value="%9"/>
+  <alias path="version.ro.isdc.wro4j" value="%10"/>
+  <alias path="version.jboss.bom" value="%11"/>
+  <alias path="version" value="%12"/>
+  <alias path="project" value="%14"/>
+  <alias path="version.war" value="%13"/>
+  <alias path="version.surefire.plugin" value="%17"/>
+  <alias path="version.ro" value="%16"/>
+  <alias path="project.build.directory" value="%15"/>
+  <alias
+   path="/kontoNotifier-web/src/main/java/org/rochlitz/kontoNotifier/rest/KontoService.java" value="%1"/>
+  <alias path="version.ro.isdc" value="%18"/>
+  <alias path="project.build.finalName" value="%19"/>
+  <alias path="version.jboss.bom.eap" value="%20"/>
+  <alias path="version.surefire" value="%21"/>
+  <alias
+   path="/kontoNotfierEJB/src/org/rochlitz/kontoNotfier/persistence/EjbDao.java" value="%0"/>
+  <alias path="version.jboss" value="%22"/>
+  <alias path="/kontoNotifier-web/functional-tests/pom.xml" value="%6"/>
+  <alias path="project.build" value="%23"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

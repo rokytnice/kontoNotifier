@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="285" key="DIALOG_WIDTH"/>
+		<item value="155" key="DIALOG_Y_ORIGIN"/>
+		<item value="594" key="DIALOG_X_ORIGIN"/>
+		<item value="443" key="DIALOG_HEIGHT"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="efresh&quot; );" key="selection"/>
+		<list key="findhistory">
+			<item value="efresh&quot; );"/>
+			<item value="member-table"/>
+			<item value="able( &quot;refresh&quot; "/>
+			<item value="buildNotsRows"/>
+			<item value="refreshButton"/>
+			<item value="member"/>
+			<item value="notifiers-table"/>
+			<item value="( &quot;#members&quot; ).em"/>
+		</list>
+		<list key="replacehistory">
+			<item value="not"/>
+			<item value="not-art"/>
+			<item value="kontos"/>
+			<item value="konto"/>
+			<item value="org.rochlitz.gironotifier"/>
+			<item value="//TODO AR getOutStream()"/>
+			<item value=".getText().toString()"/>
+			<item value="getText("/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="411" key="DIALOG_Y_ORIGIN"/>
+		<item value="1030" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>
